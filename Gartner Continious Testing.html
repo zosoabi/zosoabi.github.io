@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js"> <![endif]-->
+<html>
+	<head>
+<!-- AppInternalsXpert BMX Integration Begin -->
+<script>
+if(!RVBD_EUE){
+   var RVBD_EUE={startJS:Number(new Date()),
+   clientId:'',appId:1,
+   collector:'bmxrpt.gartner.com',
+   collectorHttpPort:80, collectorHttpsPort:443,
+   sv:'0401',
+   ajax:true, sync:true,
+   ajaxResponseTime:true};
+   (function(){
+      var w=window,l=w.addEventListener,m=w.attachEvent,
+      d=document,s='script',t='load',o=RVBD_EUE,
+      r=(('https:'===d.location.protocol)?
+      'https://bmxrpt.gartner.com:443':
+      'http://bmxrpt.gartner.com:80')+
+      '/jsi/riverbed_appinternals.d.'+
+      (o.ajax?'ajax.js':'js'),p=('onpagehide' in w),e=p?'pageshow':t,
+      j=d.createElement(s),x=d.getElementsByTagName(s)[0],
+      h=function(y){o.ldJS=o.ldJS||new Date();o.per=y?y.persisted:null;},
+      i=function(){o.ld=1;};o.cookie=d.cookie;d.cookie=
+      '_op_aixPageId=0; path=/; expires='+(new Date(0)).toGMTString();
+      o.cookieAfterDelete=d.cookie;j.async=1;j.src=r;
+      if(l){l(e,h,false);if(p){l(t,i,false);}}else if(m)
+      {m('on'+e,h);if(p){m('on'+t,i);}}
+      if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}
+      else{x.parentNode.insertBefore(j,x);}
+   })();}
+</script>
+<script>if(!RVBD_EUE_PARAM){var RVBD_EUE_PARAM={};} RVBD_EUE_PARAM.pageId = 'a2_07a532c1-329e-43e2-9359-36e572869f7c';</script>             
+<!-- AppInternalsXpert BMX Integration End -->
+
+		<title>Gartner Reprint</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+
+<!--[if IE]>
+  <script src="https://www.gartner.com/imagesrv/apps/common/js/jq/jquery-1.10.2-min.js;wadcce133209edef6f"></script>
+<![endif]-->
+<!--[if !IE]><!-->
+  <script src="https://www.gartner.com/imagesrv/apps/common/js/jq/jquery-2.0.0.js;waf4339047e28be8d4"></script>
+<!--<![endif]-->
+<script src="https://www.gartner.com/imagesrv/apps/common/js/jq/jquery-migrate-1.2.1.js;wab1f158706e08c406"></script>
+
+<link href="https://www.gartner.com/imagesrv/apps/common/css/bootstrap-3.1.1.css;wa621a11885ac17323" rel="stylesheet">
+
+<link href="https://www.gartner.com/imagesrv/apps/common/css/jq/jquery-ui-1.10.0.custom.css;wa6b5d3d225a08fd8f" rel="stylesheet">
+<link href="https://www.gartner.com/imagesrv/apps/gproduct/css/responsive.css;waccb32eefc87e2ac6" rel="stylesheet">
+
+<script src="https://www.gartner.com/imagesrv/apps/common/js/gartner-libraries-v0.1.5.min.js;wa336b751b015aef15"></script>
+<script src="https://www.gartner.com/imagesrv/apps/common/js/jq/jQuery-Validation-Engine.2.6.4/js/languages/jquery.validationEngine-en.js;wae4f8f075455a5760"></script>
+
+<!-- Start Google Tag Manager Data Layer -->
+<script type="text/javascript">
+  var dataLayer = window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event'   : 'dlReady',
+    'fireGTM' : true,
+    'siteCode': 'My Gartner - Client Experience'
+  });
+</script>
+<!-- End Google Tag Manager Data Layer -->
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WMKV94');</script>
+<!-- End Google Tag Manager -->
+
+
+<!--[if lt IE 9]>
+  <script type="text/javascript">
+    jQuery.fx.interval = 50;
+  </script>
+<![endif]-->
+
+
+<!--[if lt IE 9]>
+  <script src="https://www.gartner.com/imagesrv/apps/common/js/respond/respond.min.js;wa9bded38c56f43c80"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <style>
+    /* specificity and PIE.htc would not address IE8 bg color issue - seano */
+  .profile .btn-primary {background-color: #003a7f !important; }
+  .profile .btn-primary:hover {background-color: #0044cc !important; }
+
+  /* content: " •  "; does not work in IE so we remove and add border left */
+  .bottom-nav .container-fluid footer #footer-links li:not(:first-child):before { content: normal; }
+  .bottom-nav .container-fluid footer #footer-links li:not(:first-child){ border-left: solid 1px #ffffff; }
+  .bottom-nav .container-fluid footer #footer-links li { border-left: solid 1px #ffffff; }
+  .bottom-nav .container-fluid footer #footer-links li:first-child { border-left: solid 1px transparent; }
+
+  .bottom-nav .container-fluid footer #footer-links li { padding-left: 6px; padding-right: 3px; }
+
+  /* IE8 doesnt resize the bg image so we need to use one that works at 100%   */
+  body.explore #content .professional-development .row .span10 .box.touch-background {
+  background: url("/imagesrv/apps/gproduct/images/explore/touch540.png") no-repeat scroll right top / contain #EFEFEF;  }
+
+  /* IE 8 was not displaying this color tgtm landing pg*/
+  #track-documents .article-content .feedItems p { color: #333333; }
+  body.track #track-documents .sortContent { color: #000000; }
+
+  /* IE8 was displaying green box left of "Showing: v" */
+  body.activate-gtm .ngSort span.pull-right {display:none; }
+
+  /* IE8 - track gtm save/add area breaking due to filter & other */
+   body.track.activate-gtm hgroup span { filter: none !important; width: auto; height: 20px !important; }
+   body.track.activate-gtm div.hoverBox .reveal-item {width: 70%; left: 15%; height: 20px !important; }
+   body.track.activate-gtm .hoverBox div.feedItems p {line-height: 1em; margin: 0 0 4px 0; font-size: 16px; }
+   body.track.activate-gtm .article-content {height: 220px; margin: 8px 0 32px 0 }
+   body.track.activate-gtm .article-content h3 {padding-bottom: 4px;  }
+
+   body.track.activate-gtm div.hoverBox div.reveal-item { bottom:20px;} /* addresses share scroll image too low*/
+
+   /*IE8 prints extra white pages, need to overwrite inline height and class bg */
+   body.reader .content-layout aside {height: auto !important; overflow:auto; }
+   body.reader .content-layout #document-browse {height: auto !important; overflow:auto; }
+
+   /* Analyst Picks Archive links need border in ie8 */
+  .explore #content .pop-ebebeb .popover ul li {border-top: 1px solid #D6D3CE; }
+
+  </style>
+<![endif]-->
+
+<style type="text/css">
+  html {
+    width: 100%;
+    height: 103%;
+    overflow-x: hidden;
+  }
+
+  .ie.v-9 .gradient, .ie.v-10 .gradient {
+    filter: none !important;
+  }
+</style>		<META NAME="robots" CONTENT="noindex">
+	</head>
+
+
+	<body class="doc-reprints">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMKV94"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<div class="container-fluid">
+			<div class="row head">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<div class="logo-container">
+					  <a href="https://www.gartner.com/home"><span class="sprite logo">&nbsp;</span></a>
+						<p class="licensed">LICENSED FOR DISTRIBUTION</p>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-7">
+				  <h1 class="condensed medium" id="docTitle">Magic Quadrant for Software Test Automation</h1>
+					<div class="new-date">
+
+				    <b>Published:</b> 20 November 2017
+				    <span class="g-id"><b>ID:</b> G00320337</span>
+				  </div>
+					
+					<p class="analyst-label">Analyst(s):</p>
+							<a title="Gartner Research Analyst, Joachim Herschmann" class="analyst" rel="author">Joachim Herschmann, </a>
+							<a title="Gartner Research Analyst, Thomas E. Murphy" class="analyst" rel="author">Thomas E. Murphy</a>
+	  			
+				  
+					<h2 class="condensed">Summary</h2>
+					<p class="summary" itemprop="description">
+					  Application leaders who are modernizing application development face an increasing need to deliver applications faster and of higher quality. We evaluate the major vendors used to accelerate and scale functional automated testing as well as enable the continuous testing required by DevOps.
+					</p>  
+
+			<!-- documentTransformReprint.ftl start -->
+			<!-- documentTransformReprint.ftl end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_strategic_planning_assumption"> </a>
+<span class="annotate" id="a1214195753">
+Strategic Planning Assumption
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<span class="annotate" id="a-555270612">
+By 2021, 50% of enterprises will leverage intelligent test automation driven by AI and machine learning.
+</span>
+</p>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_market_definitiondescription"> </a>
+<span class="annotate" id="a628681470">
+Market Definition/Description
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<span class="annotate" id="a-425348497">
+The software test automation market offers tools, technologies, components and services that together constitute the critical elements of automated testing. It includes tools for performing static code analysis, functional testing, and load and performance testing in an automated way.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-800675361">
+This Magic Quadrant focuses on functional software test automation tools. These tools enable an organization to design, develop, maintain, manage, execute and analyze automated functional tests for applications running on different platforms (including desktop, web, mobile and server). They can run automated functional tests by driving the user interface (UI) of an application (known as UI test automation), or interact with the application through an application programming interface (API test automation).
+</span>
+</p>
+<p>
+<span class="annotate" id="a-170624301">
+Test automation tools are fundamental to achieving the continuous testing approach required by DevOps. Continuous testing is the process of executing automated tests as part of the software delivery pipeline, to obtain immediate feedback on the business risks associated with a software release candidate. It requires the ability to integrate with and leverage different environments, including but not limited to development, continuous integration (CI), quality assurance (QA), preproduction, performance testing, staging and even production (e.g., by leveraging production monitoring).
+</span>
+</p>
+<p>
+<span class="annotate" id="a-456170405">
+The software test automation market consists of independent vendors and test automation products that are part of larger vendors' portfolios or solutions. Clients can purchase any test automation product as a stand-alone offering. Some products have many optional and related components and most offer &quot;free for evaluation&quot; or open-source tools, which can make up a significant percentage of a vendor's user base. We also note that many testing service providers have a test automation offering (see
+</span>
+</doc/code/296112?ref=ddisp>
+<span class="annotate" id="a920245045">
+&quot;Magic Quadrant for Application Testing Services, Worldwide&quot;
+</span>
+</a>
+<span class="annotate" id="a-641699785">
+); however, these are generally not offered independently of services.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1815765469">
+Over the years, a number of independent vendors in this space have been acquired by larger vendors, which demonstrates the criticality of automated testing in many enterprise systems. However, there are still dozens of independent vendors, as well as new vendors entering the market and established vendors transforming their products to offer enhanced test automation capabilities. Gartner expects the test automation space to continue to evolve rapidly; wearables, bots and conversational UI channels need to be folded into the omnichannel approach of modern applications, and the increased adoption of DevOps demands higher levels of automation. This will further increase the need for automated testing across a broad range of platforms and technologies.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1472646165">
+Open source continues to have a strong impact upon the market. Currently, open-source solutions are mainly oriented toward developers and focused on web and mobile technologies, making them somewhat specialized and not appropriate for all testing needs. We expect that most organizations will utilize more than one solution for the next five years. We also expect that open source will be a core element of a growing amount of cloud-delivered test automation services.
+</span>
+</p>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_magic_quadrant"> </a>
+<span class="annotate" id="a1573545366">
+Magic Quadrant
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<div class="caption" id="1437974297">
+<a id="dv_figure_1_magic"> </a>
+<strong>
+Figure 1.
+</strong>
+<span class="annotate" id="a1437974297">
+Magic Quadrant for Software Test Automation
+</span>
+</div>
+<div class="clear"></div>
+<img src="https://www.gartner.com/resources/320300/320337/320337_0001.png;wa0132f0afbf3582c8?reprintKey=1-4KT1O8L" alt="Research image courtesy of Gartner, Inc." />
+<p class="source">
+<span class="annotate" id="a-163262103">
+Source: Gartner (November 2017)
+</span>
+</p>
+</p>
+<h3 class="condensed">
+<a id="dv_vendor_strengths_and"> </a>
+<span class="annotate" id="a862230979">
+Vendor Strengths and Cautions
+</span>
+</h3>
+<h4 class="condensed">
+<span class="annotate" id="a-996381691">
+CA Technologies
+</span>
+</h4>
+<p>
+<span class="annotate" id="a-346871615">
+CA Technologies is in the Visionaries quadrant based on its vision for DevOps, shift-left testing and continuous testing. Its automated testing portfolio has evolved to address the different phases of software delivery, including plan, build, test, release and operate, and it supports agile and lean development practices.
+</span>
+</p>
+<p>
+<span class="annotate" id="a820097368">
+CA's test automation offering consists of several products, including CA Agile Requirements Designer for test design and generation, CA Service Virtualization (SV)/Application Test for on-premises test execution, and CA BlazeMeter for SaaS-based testing. There is an integration with CA Test Data Manager for creating and provisioning test data. Test cases can be generated with a visual modeling paradigm using different path options, a risk-based approach or by recording live scenarios. By default the generated test cases are manual. However, test scripts can be generated using configuration files and code snippets for different execution engines, such as CA Application Test, Selenium, Ranorex or Testplant, as well as the Taurus open-source testing framework. There are integrations with CI tools such as Jenkins and CA Continuous Delivery Director, which orchestrates continuous testing and delivery.
+</span>
+</p>
+<p>
+<span class="annotate" id="a271771800">
+CA offers test automation using a framework-driven paradigm. It supports testing for a wide range of technologies, including desktop, web and mobile, with either CA Application Test or by generating automation scripts for supported automation tools and open-source frameworks. Tests can be executed on cloud environments, such as Amazon Web Services or Microsoft Azure, or on local machines.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths"> </a>
+<span class="annotate" id="a1895348286">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a1220788442">
+CA enables shift-left testing through SaaS-based, API-driven, open-source-supported tools that support continuous testing throughout the development life cycle.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-748376595">
+CA allows automatic and systematic generation of optimized sets of test cases and test data based on changes in the model. This offers significant advantages over creating test cases in a less systematic manner and manually maintaining existing automation sets.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a489481272">
+CA has a broad network of service and technology partners offering joint solutions and driving CA brand awareness. Global system integrators offer CA's solutions within their practices, and managed service providers leverage CA's solutions to power their subscription-based IT services.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions"> </a>
+<span class="annotate" id="a1131661885">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-1791790762">
+CA does not natively offer support for UI object recognition, mobile application/device testing or UI testing of applications that are not web-based, relying on integrations with other UI test automation tools that support these. This may result in additional license costs for separate tools.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-645536536">
+Managing relationships with third-party asset repositories and keeping the integrity between requirements, code and test in sync relies on repeated exports and imports.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1418760551">
+While CA has a strong set of products supporting continuous testing using a model-based approach, several of its reference customers indicated that this has not yet fully resonated. However, the vendor also supports traditional methods of test creation.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a1456115372">
+IBM
+</span>
+</h4>
+<p>
+<span class="annotate" id="a1263879349">
+IBM is in the Challengers quadrant, with a good ability to execute and support enterprise customers but a slower pace of innovation than the Visionaries and Leaders exhibit. In 2016, IBM partnered with HCL Technologies for development and maintenance of its Rational product line, allowing IBM to invest in emerging cloud-native and cognitive solutions.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1134229823">
+IBM's Rational Test Workbench (RTW) test automation offering is a test platform that supports a wide range of scenarios, including API testing, functional UI testing and service virtualization. Following a record/enhance/execute paradigm, RTW offers scripting options for Visual Basic .NET and Java, and a natural-language test representation with visual editing. For UI testing of mobile and web applications, test steps, data substitutions and verification points can be created from interactive application screenshots. RTW integrates with IBM's UrbanCode platform as well as other CI tools such as Jenkins. Test assets can be versioned from any part of RTW into version control systems such as Git or IBM Rational Team Concert.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1570857803">
+RTW automates functional tests for traditional Windows, Java or .NET, web and mobile applications, and the mainframe. It also enables API testing and can be combined with Rational Test Virtualization Server for service virtualization. IBM does not provide its own support for managing and testing mobile devices; this instead comes through partnerships with Bitbar and Perfecto Mobile.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_1"> </a>
+<span class="annotate" id="a-674138113">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a892392766">
+IBM's test automation products offer strong support for the IBM technology stack, including mainframe, middleware such as the MQ series, and Linux-based environments. This makes it a good choice for enterprises that have significant investment in the IBM ecosystem.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-845219542">
+IBM offers users a broad network of skilled resources through IBM Testing Services, which provides support, extensions and services to help accelerate time to value.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a213558965">
+IBM supports a comprehensive DevOps process by providing an integration between application life cycle management (ALM), test automation and release automation, enabling continuous delivery with automated testing.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_1"> </a>
+<span class="annotate" id="a-2137813412">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-2058840908">
+Reference customer survey responses and Gartner Peer Insights reviews (at the time of writing) indicated below-average satisfaction overall with IBM's test automation offering. The main challenges identified by reference customers were lack of support for the latest technologies and modern web UI toolkits, as well as technical support.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1950522687">
+IBM's portfolio is comprehensive and could be perceived as too complex, especially in the early stages of investing in test automation or for simpler testing needs. IBM relies on partners for additional functionality, which may result in additional technical and pricing complexity.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a2134915822">
+Although IBM offers some productivity features, such as record/replay, it offers limited support for model-driven test generation. This may result in additional effort regarding the maintenance of large sets of tests.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a932719539">
+Micro Focus
+</span>
+</h4>
+<p>
+<span class="annotate" id="a2015093842">
+Micro Focus is in the Leaders quadrant as the company has increased its visibility in the market significantly after the successful completion of its spin-merge with Hewlett Packard Enterprise (HPE) Software in September 2017. The move has created one of the largest dedicated software companies in the world, and makes Micro Focus the largest testing tool provider by revenue share.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1195095842">
+The portfolio inherited from HPE Software includes products for test automation, application life cycle management (ALM) and cloud-based testing. In addition to its core Unified Functional Testing (UFT) product for test automation engineers, Micro Focus offers Business Process Testing (BPT) for business analysts/testers and has addressed more-technical roles with UFT Pro (formerly LeanFT), which supports Selenium test capabilities for agile automation engineers and developer testers. The company also has testing products sold under the Silk brand. Silk Test enables rapid development of automated tests using different automation paradigms, such as record/replay and keyword-driven testing. It includes a visual testing interface for business-focused users, as well as Java and .NET developer-focused interfaces.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1466058550">
+Both product sets support testing a wide range of technologies, such as desktop, web and mobile applications. UFT can be run on-premises or on Amazon Web Services (AWS), and mobile tests can also be run on-premises or on the AWS device farm. Micro Focus provides integrations with CI tools, source control and test management systems.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_2"> </a>
+<span class="annotate" id="a1051342784">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a1339858199">
+Micro Focus promotes a continuous testing approach with a product set for automating tests at scale. It supports a collaborative approach to test automation by supporting different roles, such as business analysts, test automation engineers and developers.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a676151285">
+The combined Micro Focus product sets deliver comprehensive capabilities by supporting different testing paradigms, such as BDD, keyword-driven, scriptless testing and different scripting options.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a858909766">
+Through its spin-merge with HPE Software, Micro Focus now has the largest market share in the testing market and can offer users a broad network of skilled partners that provide support, extensions and services.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_2"> </a>
+<span class="annotate" id="a-1112321413">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-141686017">
+While Micro Focus has made good progress in integrating overlapping testing products from earlier acquisitions, it now faces the double challenge of having to integrate two sets of products with a high degree of overlap as well as assimilate the former HPE Software organization.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-2018096277">
+Micro Focus will need to clearly communicate its go-forward strategy for the many products that comprise its portfolio. Any delay will risk further enhancing the uncertainty and concerns that already exist about the future of its products and investments made.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a656257928">
+Organizations that are looking for more lightweight options could perceive Micro Focus' portfolio as too complex, especially for simpler testing needs. Gartner continues to see a trend of competitors gaining market share directly by adding former HPE Software customers.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a1205747940">
+Microsoft
+</span>
+</h4>
+<p>
+<span class="annotate" id="a943565658">
+Microsoft is in the Challengers quadrant based on strong execution globally with its development and testing offerings. It has integrated the Xamarin business, acquired in early 2016, into its Visual Studio division while keeping the core Xamarin team and products intact.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1945199887">
+Microsoft's test automation offering consists of Visual Studio and the Xamarin platform for test authoring, Visual Studio Team Services (VSTS) and Xamarin Test Cloud for cloud-based test execution, and Team Foundation Server (TFS) for on-premises test execution. Microsoft has a strong third-party network providing additional extensions, such as SpecFlow+ that enables BDD for .NET. Targeted at the .NET developer community, the Microsoft solution offers a range of scripting options and support for many testing frameworks. A record and playback experience and plug-ins provide productivity enhancements and integrations to other tools. Using the Azure stack, tests can be run at scale on many different test environments, and the Xamarin Test Cloud provides a large collection of real devices with different configurations. Microsoft offers strong support for CI/CD through VSTS, and supports integrations with CI tools such as Jenkins.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-2119498507">
+Microsoft offers support for .NET-based applications, web and mobile, and provides templates for testing additional targets such as the Universal Windows Platform. An IntelliTest feature automatically generates unit tests for .NET code. A capability for live unit testing and test impact analysis automatically identifies and runs only the impacted tests based on the incoming code changes.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_3"> </a>
+<span class="annotate" id="a-1518143615">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-398684952">
+Microsoft offers strong support for continuous testing. It enables developers to write unit tests, UI automation tests and API tests directly in their preferred environment, and run them at scale as part of integration builds.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a253150177">
+Microsoft is a good choice for enterprises that have significant investment and skills in its ecosystem. The Xamarin platform allows .NET developers to employ their skills in the development and testing of mobile apps.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1024520282">
+Microsoft understands modern professional developers and has made a commitment to open-source communities to meet their needs. Users can utilize open-source frameworks such as SpecFlow+ or Selenium, and the Visual Studio Test Platform is now cross-platform and open source.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_3"> </a>
+<span class="annotate" id="a-86829414">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a1438067553">
+Microsoft does not natively offer support for API testing. However, it has partnered with Parasoft to include the latter's Virtualize/SOAtest Desktop client in its Visual Studio Enterprise Subscription, giving users free access for six months.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a70229792">
+While Microsoft's test automation solution offers some productivity tools, such as test templates and a record/replay facility, its heavy focus on developers makes it less-suited for nondevelopers. It has not generated traction among higher-level LOB buyers.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-130163923">
+The maintenance of large sets of tests may require additional effort. Although Microsoft offers the ability to automatically run only the tests affected by code changes, it does not offer systematic generation of required test cases — for example, based on changes of an application model.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a795744917">
+Parasoft
+</span>
+</h4>
+<p>
+<span class="annotate" id="a-1329394291">
+Parasoft makes its first appearance in the Magic Quadrant, as a Niche Player. The company has been in the test automation market for many years, with customers in the financial, telecom, insurance and healthcare sectors. It is one of the pioneers of API testing tools and focused on organizations looking to adopt continuous testing as part of a DevOps initiative.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-267099591">
+Its API testing product SOAtest is part of a larger portfolio that also includes unit testing, environment management and service virtualization. Parasoft focuses on QA organizations that have developer and developer tester roles, and its SOAtest and Virtualize products support a wide range of protocols and frameworks. Tests can be created using a record and playback experience as well as from artefacts such as Swagger, RAML and WSDL. Parasoft offers both desktop and web interfaces for scriptless test development, and its data generator tool can create test data as part of the process. It is possible to run end-to-end testing scenarios, including web functional tests (using Selenium), API tests, mobile tests (using Appium), integration tests and database validation tests. Parasoft provides a number of REST APIs for test creation and execution that can be used as part of a CI process, and additional functionality is available via plug-ins at the Parasoft marketplace.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1407709718">
+Parasoft's support for a wide range of protocols enables it to access and test middleware and back-end systems, including ESBs and databases. Tests can be executed on local machines or using dynamic infrastructures that leverage either Docker images, Microsoft Azure VMs or Amazon Web Services VMs.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_4"> </a>
+<span class="annotate" id="a207337282">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-2063207863">
+Parasoft is a solid choice for enterprises that are focused on continuous testing and DevOps initiatives. It provides strong integration with test management systems and CI tools such as Jenkins.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1473469208">
+Parasoft offers very comprehensive API testing capabilities by supporting more than 120 protocols and message types. It enables the automated execution of end-to-end test scenarios across multiple endpoints, including services, databases and ESBs.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1340222434">
+Parasoft has released a free Community Edition of Parasoft Virtualize, and partnered with Microsoft to offer Visual Studio Enterprise Subscription users free access to its Virtualize/SOAtest Desktop client for six months. This will help increase Parasoft's visibility in the .NET developer community.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_4"> </a>
+<span class="annotate" id="a938662585">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a157560692">
+Parasoft offers support for web testing at both the API level and UI level, using Selenium for web and Appium for web mobile, but it does not support testing at the UI level for applications that are not web-based.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1872957110">
+While Parasoft has partnered with system integrators such as Cognizant, Infosys and Accenture, it has not yet been able to leverage these relationships fully. The Parasoft Professional Services team delivers the majority of Parasoft installations.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a915157826">
+Although Parasoft reference customers indicated only slightly below-average overall satisfaction, they did identify the lack of a large supportive online user community and an open-source strategy from Parasoft as areas of concern.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a-379205335">
+Ranorex
+</span>
+</h4>
+<p>
+<span class="annotate" id="a1057405502">
+Ranorex is in the Niche Players quadrant based on its limited distribution strategy and focus on selling directly to developers and testers. Ranorex has a solid product with good technology support, but the company is still small and continues to mature and evolve its vision for test automation.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1054936336">
+Ranorex's test automation product, Ranorex Studio, offers a complete environment for building test automation based on the Microsoft .NET framework. It includes automated testing, data- and keyword-driven testing, and cross-platform and device testing within a single tool. Ranorex focuses on developers and testers, with an option to write test code in C# or Visual Basic .NET (VB.NET). It offers an automerge capability in case of conflicts after concurrent script modifications when using Git. For less-technical users, Ranorex Studio provides productivity features for rapid development of automated tests, such as a keyword-driven paradigm and reusable action modules that can be built using the Ranorex Recorder facility. Test cases and smart folders can be run conditionally based on data from a data source or parameters. Ranorex supports the use of Selenium WebDriver, marrying its ability to record and manage an object repository together with the ability to execute cross-browser Selenium tests.
+</span>
+</p>
+<p>
+<span class="annotate" id="a436530047">
+Ranorex supports a broad range of technologies, including native Windows, .NET or Java technology stacks and many popular GUI frameworks. It supports web testing for a wide range of web development front-end toolkits and browsers (desktop and mobile), and can leverage Selenium infrastructure such as Selenium Grid for executing tests remotely.
+</span>
+</p>
+<p>
+<em>
+<span class="annotate" id="a1697438002">
+Note: Idera announced in October 2017 its acquisition of Ranorex, which will become part of Idera's Test Management Tools business.
+</span>
+</em>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_5"> </a>
+<span class="annotate" id="a1932818179">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a933918232">
+Ranorex offers comprehensive technology support with UI object recognition for Windows, .NET, Java, web and mobile application technologies. It is a particularly good fit for developers and testers with .NET skills.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1994629125">
+Ranorex supports continuous testing by integrating with CI tools such as Jenkins, TeamCity and Microsoft TFS, and supporting Docker images as well as SaaS-based execution platforms such as Sauce Labs or BrowserStack for test execution.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1959227797">
+Ranorex offers a straightforward and relatively low-cost license model that includes testing for a wide range of technologies and platforms, and no additional fees for plug-ins, extensions or integrations.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_5"> </a>
+<span class="annotate" id="a1964154584">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a1721168792">
+While its UI object recognition is very powerful, Ranorex does not provide an API testing solution and as yet offers no capabilities to import or transform existing API tests into Ranorex tests, or vice versa.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1508127767">
+Ranorex is still small. While it has a number of distribution and service partners, it lacks the strategic partnerships with large system integrators that could help it make inroads into large enterprises.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a694219598">
+Reference customer responses, Gartner Peer Insights reviews (at the time of writing) and inquiry interactions indicated below-average satisfaction overall with Ranorex's test automation offering. The main areas for improvement identified included product stability and resolving support issues.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a-345649744">
+SmartBear
+</span>
+</h4>
+<p>
+<span class="annotate" id="a909454467">
+SmartBear is in the Challengers quadrant, having demonstrated continued success in focusing on IT organizations' needs to shift to continuous testing. SmartBear offers end-to-end automated testing and has a strong focus on the API life cycle.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1908399368">
+SmartBear's test automation offering is a collection of tools for creating functional tests at the UI layer and the API layer, as well as tools for cloud-based execution of UI tests and service virtualization. TestComplete enables QA engineers to develop automated tests at the UI layer using both keyword-driven and programmatic development styles. TestLeft is aimed at developers and enables them to contribute to test automation via an integration with their preferred IDE, such as Visual Studio. For the API layer, ReadyAPI provides functional, performance and security testing capabilities, while TestServer offers these capabilities in developer-native tools. Automated web tests can be run at scale in many different test environments in the CrossBrowserTesting cloud, which provides many desktop and mobile browsers and supports frameworks such as Selenium and Appium. SmartBear is engaging in open-source communities and sponsoring tools such as SoapUI and Swagger.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1934743137">
+SmartBear offers support for Windows, .NET and Java applications as well as web development toolkits and mobile devices. It enables continuous testing through its strong capabilities for API testing and service virtualization, support for different build and CI servers, and integrations with source control tools, defect tracking tools and test management systems.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_6"> </a>
+<span class="annotate" id="a-636668220">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a914648960">
+SmartBear has a broad platform with a well-rounded set of capabilities for functional testing of desktop applications and popular GUI framework controls, web and mobile applications.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1179170348">
+SmartBear has a complete API life cycle offering that includes functional and load testing, service virtualization, and the definition and management of services. This positions the company well for testing microservice architectures.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1997718555">
+SmartBear has a strong community that supports customers and helps them to expand and customize products for their specific needs. It is well-connected to the open-source community through its support for Swagger and SoapUI.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_6"> </a>
+<span class="annotate" id="a-1305320713">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-722147183">
+SmartBear's developer-oriented products TestLeft and TestServer are relatively new and still have some limitations, such as no record capability and tests needing to be scripted. While developers prefer coding, the products' lack of productivity features may have an impact on overall test development efforts.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1225948033">
+While SmartBear provides support for BDD, it does not offer capabilities for automatic test case design and model-based test generation. This may result in additional effort to maintain large sets of tests.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a741737601">
+SmartBear has grown from a single product company for UI testing into a provider of software quality tools for teams, with multiple product lines that still show their different heritages.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a-132715381">
+Testplant
+</span>
+</h4>
+<p>
+<span class="annotate" id="a1918372856">
+Testplant is in the Visionaries quadrant based on its vision for technology-agnostic, cross-platform automated testing and for addressing the need for testing real user experience. It is one of the pioneers of image-based object recognition and test automation that enables testing on any device or technology. It has many customers in industries such as retail, automotive, aerospace and defense.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-768146616">
+Testplant's Eggplant Functional product is part of its Digital Automation Intelligence Suite, which also includes Eggplant AI for optimized test case generation. Eggplant Functional enables rapid development of reusable, technology-agnostic test automation, with different options for developing tests, such as a guided record mode and manual scripting. It offers productivity features such as table-based (keyword-driven) testing and support for the Gherkin/BDD framework for nontechnical users. Eggplant Functional provides its own scripting language, SenseTalk, but has language bindings for different programming languages. Developers can take advantage of the eggDrive APIs for Java and .NET to drive Eggplant Functional. Eggplant AI allows users to automatically generate and run an optimized set of tests based on the pattern of defects found. Integration to CI tools such as Jenkins comes through plug-ins and APIs. Test assets can be versioned directly from Eggplant Functional into Git or SVN.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-872054616">
+Testplant doesn't provide support for specific UI technologies or platforms as such. Instead, through its image-based object recognition, it enables the development of reusable automated tests for any application that has a GUI. The vendor provides integrations to domain-specific testing tools, including vehicle Controller Area Network (CAN) bus systems and retail payment systems.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_7"> </a>
+<span class="annotate" id="a1088812677">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a1797029739">
+Testplant offers a well-rounded functional test automation solution that supports a wide range of technologies and custom devices from industry-specific applications, such as vending machines, in-vehicle infotainment systems and gaming consoles.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-901905877">
+Testplant has a strong focus on omnichannel applications and the IoT, making it a good choice for consumer-facing applications in e-commerce and other interactive scenarios.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1925702196">
+Testplant promotes a collaborative approach to test automation by enabling nontechnical users to contribute to the process of creating automated tests through its support for behavior-driven testing, which increases agility and productivity.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_7"> </a>
+<span class="annotate" id="a-279828714">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-1614190115">
+While Testplant offers support for testing REST/SOAP API calls, it lacks support for additional protocols and technologies for API testing.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a357237645">
+Testplant's technology relies on an easy-to-use image recognition paradigm. However, reference customers noted that there can be challenges when using the product without training and guidance from an experienced resource.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-972095622">
+Testplant has good traction in North America and EMEA, but needs to increase its marketing efforts to bring more product awareness. It has a small footprint in social media and does not offer a community where users can share best practices.
+</span>
+</p>
+</li>
+</ul>
+<h4 class="condensed">
+<span class="annotate" id="a200096910">
+Tricentis
+</span>
+</h4>
+<p>
+<span class="annotate" id="a-1550511296">
+Tricentis is in the Leaders quadrant as it shows strong sales growth with enterprise IT and ISVs, and continues to execute well in building partnerships with system integrators. It has a forward-thinking vision for continuous testing and enabling manual testers to become test automation experts.
+</span>
+</p>
+<p>
+<span class="annotate" id="a89955389">
+Tricentis Tosca is a suite of tools that support functional test automation at the UI layer and API layer, service virtualization, and exploratory testing. It offers model-based test automation using a script-free development approach and productivity features such as UI/API scanning. Tests can be developed using a table-view paradigm that abstracts from the underlying technical details. A test case design capability allows users to generate an optimized set of data-driven tests based on different combinatorial options of test data and the desired risk coverage. The product supports automated migration and integration of Selenium tests, and their execution in larger test suites that can also contain tests for other types of applications, such as desktop or mobile. There is good support for continuous testing through integration with CI tools such as Jenkins.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1708714449">
+Several editions of Tricentis Tosca offer core features such as test case design, test and test data management, as well as different sets of technology support. The Modern Apps edition includes support for testing desktop, web and mobile apps; API testing; and CI integration. The Premium edition adds support for enterprise and packaged applications.
+</span>
+</p>
+<h5 class="condensed">
+<a id="dv_strengths_8"> </a>
+<span class="annotate" id="a-1480673722">
+Strengths
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a428431195">
+Tricentis Tosca offers a strong combination of risk-based test case design, model-based test automation, integrated test data management and analytics. It is well-suited for blended teams with both skilled and low-skilled test automators.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1159142457">
+Tricentis Tosca delivers a comprehensive set of capabilities for testing modern application technologies on both the UI layer and API layer. It also offers support for a wide range of enterprise applications.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a729984438">
+Tricentis has built strong relationships with service and technology partners, including joint marketing and training programs that have resulted in the certification of a significant number of resources. It continues to proactively work with global system integrators to provide joint sales and service support.
+</span>
+</p>
+</li>
+</ul>
+<h5 class="condensed">
+<a id="dv_cautions_8"> </a>
+<span class="annotate" id="a745663285">
+Cautions
+</span>
+</h5>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a2095713636">
+While Tricentis has been getting more traction in North America and has won some large deals in the region, the majority of its customers are in EMEA and APAC. The vendor needs to increase its marketing efforts in North America to raise more product awareness.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1322161">
+Tricentis' test automation solution offers some developer-oriented features, such as Tosca API Scan to create TestCases for Webservices as well as a .NET API to extend Tosca functionality. However, its focus on nontechnical users makes it less-suited for developers.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a973383413">
+Tricentis reference customers noted that pricing could be more attractive. Pricing is too complex and Tosca is a premium-priced product, which is harder to justify in an era of open source and SaaS-oriented pricing.
+</span>
+</p>
+</li>
+</ul>
+<h3 class="condensed">
+<a id="dv_vendors_added_and"> </a>
+<span class="annotate" id="a1629849933">
+Vendors Added and Dropped
+</span>
+</h3>
+<p>
+<span class="annotate" id="a-274275211">
+We review and adjust our inclusion criteria for Magic Quadrants as markets change. As a result of these adjustments, the mix of vendors in any Magic Quadrant may change over time. A vendor's appearance in a Magic Quadrant one year and not the next does not necessarily indicate that we have changed our opinion of that vendor. It may be a reflection of a change in the market and, therefore, changed evaluation criteria, or of a change of focus by that vendor.
+</span>
+</p>
+<h4 class="condensed">
+<a id="dv_added"> </a>
+<span class="annotate" id="a-79191782">
+Added
+</span>
+</h4>
+<p>
+<span class="annotate" id="a-254893972">
+CA Technologies
+</span>
+</p>
+<p>
+<span class="annotate" id="a-189636439">
+Parasoft
+</span>
+</p>
+<h4 class="condensed">
+<a id="dv_dropped"> </a>
+<span class="annotate" id="a-2053094407">
+Dropped
+</span>
+</h4>
+<p>
+<span class="annotate" id="a241769267">
+Hewlett Packard Enterprise
+</span>
+</p>
+<p>
+<span class="annotate" id="a931429881">
+Worksoft
+</span>
+</p>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_inclusion_and_exclusion"> </a>
+<span class="annotate" id="a-1346526458">
+Inclusion and Exclusion Criteria
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<span class="annotate" id="a-768674459">
+Vendors in this year's Magic Quadrant met the following criteria:
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-297797662">
+Provided the ability to create, develop, manage and execute automated functional tests for at least one of the following: UI test automation (tests drive the UI of an application), or API test automation (tests drive an API).
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a466833726">
+Provided test authoring capabilities on the Windows platform. In addition, provided the ability to execute tests on the Windows platform and at least the Android and iOS mobile platforms (additional platform test execution support, such as Mac OS or Linux, is desirable).
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a578200457">
+Provided the ability to test native Windows desktop applications. In addition, demonstrated the ability to test at least one of the following: responsive web applications, native mobile applications or packaged applications.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1463236251">
+Reported software revenue in 2016 of more than $10 million from their software test automation product license (stand-alone product offering — not part of a combined service and tools offering).
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a481817658">
+Had global market representation and a direct presence in at least two of the following regions: North America, Latin America, EMEA or Asia/Pacific.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a2013750865">
+Added at least 20 new paying enterprise customers for their test automation product in 2016 across at least two of the following regions: North America, Latin America, EMEA or Asia/Pacific.
+</span>
+</p>
+</li>
+</ul>
+<p>
+<span class="annotate" id="a-2123134595">
+We excluded vendors that:
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-361143404">
+Offered only test execution platforms, without a tool to create, develop or manage automated tests.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1017501051">
+Offered mobile-only testing (see Note 1).
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a888587475">
+Offered commercial off-the-shelf (COTS)-only testing tools or primarily focused on packaged application testing scenarios (see Note 2).
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-916544617">
+Sold their software only coupled with development/professional services, whereby the tool is used exclusively by company consultants.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-434713018">
+Did not sell a commercial enterprise offering — that is, offered the solution only as open-source software.
+</span>
+<em>
+<span class="annotate" id="a-730256592">
+(Note: While we are seeing strong uptake of many open-source components, we did not include open-source solutions because of the revenue inclusion requirement.)
+</span>
+</em>
+</p>
+</li>
+</ul>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_evaluation_criteria"> </a>
+<span class="annotate" id="a-1370674662">
+Evaluation Criteria
+</span>
+</h2>
+<div class="clearme"></div>
+<h3 class="condensed">
+<a id="dv_ability_to_execute"> </a>
+<span class="annotate" id="a-812011112">
+Ability to Execute
+</span>
+</h3>
+<p>
+<span class="annotate" id="a646001636">
+We evaluate technology providers on the quality and efficacy of the processes, systems, methods or procedures that enable IT provider performance to be competitive, efficient and effective, and to positively impact revenue, retention and reputation within Gartner's view of the market.
+</span>
+</p>
+<p>
+<span class="annotate" id="a945128226">
+Core test automation functionality is fast becoming a commodity, and vendors are increasingly competing by adding value on top of the underlying frameworks and tools. Leaders with the Ability to Execute deliver not only a strong product, but a comprehensive offering that shows thought leadership, and includes services, support, strong communities and partner ecosystems, which collectively will enable successful utilization of these products.
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<b>
+<span class="annotate" id="a148445219">
+Product or Service:
+</span>
+</b>
+<span class="annotate" id="a1108076327">
+Breadth and depth of products and features across the software development life cycle (SDLC), including test design and development; test case maintenance and reuse; and test and test data management, automated testing and integration, with a strong focus on support for continuous testing.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-1531429629">
+Overall Viability:
+</span>
+</b>
+<span class="annotate" id="a488261106">
+Test automation product R&amp;D spend, growth of software test automation business, and funding or capitalization.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a1253917099">
+Sales Execution/Pricing:
+</span>
+</b>
+<span class="annotate" id="a1223231562">
+Broad sales reaching across geographies and industries; effectiveness of sales, such as long/short sales cycles; and simplicity of pricing models.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a2091137950">
+Market Responsiveness/Record:
+</span>
+</b>
+<span class="annotate" id="a-751176477">
+How quickly new products and features can be brought to market through organic development, partnerships and acquisitions.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-1539052730">
+Marketing Execution:
+</span>
+</b>
+<span class="annotate" id="a485566634">
+General awareness of the vendor in the market. Exhibited in customer interactions, presence at events and on social media, perception across IT and LOBs, and how easily buyers understand vendor differentiators.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-100387561">
+Customer Experience:
+</span>
+</b>
+<span class="annotate" id="a2137186102">
+Ability to meet and exceed customer expectations in achieving increased levels of automation and maintaining that automation; ease of onboarding and training for development; and an increase in clients' overall testing maturity.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-1978891066">
+Operations:
+</span>
+</b>
+<span class="annotate" id="a-1974324384">
+Effective leadership, stability in leadership vision, and employee retention.
+</span>
+</p>
+</li>
+</ul>
+<div class="overflow-item">
+<table class="table table-bordered">
+<caption id="caption-977154619">
+<a id="dv_table_1_ability"> </a>
+<strong>
+<span class="annotate" id="a977154619">
+Table 1.
+</span>
+</strong>
+&nbsp;
+<span class="annotate" id="977154619">
+Ability to Execute Evaluation Criteria
+</span>
+</caption>
+<thead>
+<tr>
+<th
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellHeadingL">
+<span class="annotate" id="a-2005149958">
+Evaluation Criteria
+</span>
+</p>
+</th>
+<th
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellHeadingL">
+<span class="annotate" id="a-1480117374">
+Weighting
+</span>
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1925556144">
+Product or Service
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-911447416">
+High
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1180937308">
+Overall Viability
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1104830300">
+Medium
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1667161746">
+Sales Execution/Pricing
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1797931997">
+Medium
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-2125024517">
+Market Responsiveness/Record
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-1803933602">
+Medium
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-1787526061">
+Marketing Execution
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-1110831905">
+Medium
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1330622208">
+Customer Experience
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-398344627">
+High
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-406292103">
+Operations
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1126552680">
+Low
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="source">
+<span class="annotate" id="a-171772763">
+Source: Gartner (November 2017)
+</span>
+</p>
+<h3 class="condensed">
+<a id="dv_completeness_of_vision"> </a>
+<span class="annotate" id="a145203732">
+Completeness of Vision
+</span>
+</h3>
+<p>
+<span class="annotate" id="a1142902842">
+We evaluate technology providers on their ability to convincingly articulate logical statements about current and future market direction, innovation, customer needs and competitive forces, as well as how well they map to Gartner's view of the market.
+</span>
+</p>
+<p>
+<span class="annotate" id="a783415645">
+Leaders having a Completeness of Vision are strong in their ability to reach the market via a compelling message and in delivering a solid solution globally. As enterprises engage in multiyear transformations involving agile, DevOps and bimodal practices, the ability of a vendor to create a vision of test automation that consistently creates value along the way and drives positive change will be crucial. The key messages now are around productivity and the ability to aid in technology and process transformation.
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<b>
+<span class="annotate" id="a-1236632205">
+Market Understanding:
+</span>
+</b>
+<span class="annotate" id="a-775330446">
+The ability to deal with a highly dynamic and competitive market as well as enable customer success with automated testing. This includes understanding the needs of IT and LOBs, as well as the specific requirements of more-predictable and more-exploratory styles of work (Mode 1 and Mode 2, respectively, of bimodal).
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a2002419007">
+Marketing Strategy:
+</span>
+</b>
+<span class="annotate" id="a-1482250540">
+Strong brand recognition, thought-leading product messaging and outreach programs that cut through a diverse testing market.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-1012044360">
+Sales Strategy:
+</span>
+</b>
+<span class="annotate" id="a-912580329">
+A strong go-to-market strategy focused on selling test automation to enterprise IT, LOBs and agile developers.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a209312327">
+Offering (Product) Strategy:
+</span>
+</b>
+<span class="annotate" id="a686192523">
+Strong understanding of enterprise needs across the SDLC. A coherent solution that addresses test case design and automatic test generation; automatic test maintenance and execution; and test management, integration and automated testing as part of digital-business-driven enterprise agile and DevOps initiatives.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a1131037176">
+Business Model:
+</span>
+</b>
+<span class="annotate" id="a-55117119">
+Product revenue growth, ease of doing business with customers, and a strong partner ecosystem that amplifies the vendor's go-to-market strategy.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-289348406">
+Vertical/Industry Strategy:
+</span>
+</b>
+<span class="annotate" id="a1933131036">
+Differentiating capabilities built for specific industries, vertical-specific accelerators, and a focused go-to-market approach for any specific industries.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-1481613714">
+Innovation:
+</span>
+</b>
+<span class="annotate" id="a1429050364">
+Technology advancements in areas such as continuous testing, &quot;automating the automation&quot; (e.g., automatic test case generation, model-driven test automation), empowering non-QA resources and manual testers to contribute to test automation efforts (e.g., scriptless automation, turning exploratory tests into automated tests), and extended technology support (e.g., the IoT, wearables, omnichannel technologies).
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-2056269508">
+Geographic Strategy:
+</span>
+</b>
+<span class="annotate" id="a-203896950">
+Diverse customer deployments across geographies, awareness within geographies across the globe, and in-country vendor presence.
+</span>
+</p>
+</li>
+</ul>
+<div class="overflow-item">
+<table class="table table-bordered">
+<caption id="caption-6949845">
+<a id="dv_table_2_completeness"> </a>
+<strong>
+<span class="annotate" id="a6949845">
+Table 2.
+</span>
+</strong>
+&nbsp;
+<span class="annotate" id="6949845">
+Completeness of Vision Evaluation Criteria
+</span>
+</caption>
+<thead>
+<tr>
+<th
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellHeadingL">
+<span class="annotate" id="a-1991617157">
+Evaluation Criteria
+</span>
+</p>
+</th>
+<th
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellHeadingL">
+<span class="annotate" id="a-2088194237">
+Weighting
+</span>
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-882994042">
+Market Understanding
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1563280925">
+High
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-324451532">
+Marketing Strategy
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-774901553">
+Medium
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-2094561777">
+Sales Strategy
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-763585426">
+Medium
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1345256482">
+Offering (Product) Strategy
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a799071290">
+High
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1101016979">
+Business Model
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-740953172">
+Medium
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-2086730489">
+Vertical/Industry Strategy
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a2087555902">
+Low
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-855915695">
+Innovation
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a34861655">
+High
+</span>
+</p>
+</td>
+</tr>
+<tr>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a1914652623">
+Geographic Strategy
+</span>
+</p>
+</td>
+<td
+style="text-align: left; vertical-align: top; "
+>
+<p class="cellBodyL">
+<span class="annotate" id="a-707004791">
+Medium
+</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="source">
+<span class="annotate" id="a271838660">
+Source: Gartner (November 2017)
+</span>
+</p>
+<h3 class="condensed">
+<a id="dv_quadrant_descriptions"> </a>
+<span class="annotate" id="a585282823">
+Quadrant Descriptions
+</span>
+</h3>
+<h4 class="condensed">
+<a id="dv_leaders"> </a>
+<span class="annotate" id="a-1828516637">
+Leaders
+</span>
+</h4>
+<p>
+<span class="annotate" id="a-1755193640">
+Leaders represent a strong combination of Ability to Execute and Completeness of Vision. They have established strong market positions, as shown by breadth of adoption, global deployments and integration of other products. Leaders have been successful in building a loyal customer base, and show strong revenue growth and/or high market share. They also have a good vision of the needs of the enterprise, support for open source and standards, a solid understanding of IT requirements, and scalable channels and partnerships. They generally have breadth across a significant number of supported technologies and platforms, and deliver market-leading functionality in one or more functional areas. Leaders must provide solutions that are easy to purchase, use, manage and upgrade, and which can connect to a range of complementary systems — from both the same vendor and third parties
+</span>
+<b>
+<span class="annotate" id="a-1355438573">
+.
+</span>
+</b>
+</p>
+<h4 class="condensed">
+<a id="dv_challengers"> </a>
+<span class="annotate" id="a1289170140">
+Challengers
+</span>
+</h4>
+<p>
+<span class="annotate" id="a1816676372">
+Challengers in this market have high numbers of satisfied enterprise clients, a large and growing base of seats in deployment, and the ability to meet the needs of multiple departments in global rollouts. Challengers are vendors with a history of execution in the broad market, but they may not yet have accumulated a substantial track record in the test automation market across a range of scenarios. Vendors in this quadrant typically have strong execution capabilities, as evidenced by financial resources, and a significant sales and brand presence garnered from the company as a whole, if not directly from test-automation-related activities. They tend to have well-established partnerships and a solid global presence. In general, Challengers may have been innovators at one point, but are not seen as driving the application development market. Challengers may also lack a cohesive technical or business vision — or may have lingering product gaps or inconsistent or incomplete strategies in their product roadmaps
+</span>
+</p>
+<h4 class="condensed">
+<a id="dv_visionaries"> </a>
+<span class="annotate" id="a846964789">
+Visionaries
+</span>
+</h4>
+<p>
+<span class="annotate" id="a-1758342272">
+Visionaries have a compelling vision of products and the market's future, as well as the technical direction (and necessary resources) to take them there. However, they have not yet demonstrated that vision in one or more of the following areas: history of execution, revenue, size of client base, diversity of solutions or strong financial results. Vendors in this quadrant have a strong vision in a specific category that potentially disrupts the market through innovation or support for new technologies, but products may not be as mature or well-suited to support global enterprises.
+</span>
+</p>
+<h4 class="condensed">
+<a id="dv_niche_players"> </a>
+<span class="annotate" id="a-1121987283">
+Niche Players
+</span>
+</h4>
+<p>
+<span class="annotate" id="a1294330890">
+Niche Players have solutions catering to specific audiences or with limited use-case support today. They are not as strong in one or more of the following criteria: product breadth/completeness or focus, geography or number of customers. Although they may be a good choice for a particular departmental, regional or industry use case, they are typically not well-suited as a broad platform for use across an enterprise. In addition, vendors in this quadrant may have a much more limited ability to invest in the necessary functional as well as organizational capabilities to expand beyond their current focus. Nevertheless, for specific scenarios, an offering from a Niche Player may represent the optimal choice. In some cases, these vendors may be more mature and able to support customers than some of the Visionary providers.
+</span>
+</p>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_context"> </a>
+<span class="annotate" id="a1323431173">
+Context
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<span class="annotate" id="a-827948629">
+The 2017 Magic Quadrant has evolved to meet the challenges and changing needs of enterprises that embrace DevOps and continuous testing. As DevOps principles gain significant traction in enterprises, testing and QA is no longer a stage in delivery but an integral DevOps activity that exists in various forms through all areas.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1806306312">
+Automation has become an indispensable element in these efforts, and there has been renewed focus on software test automation tools as part of a larger toolchain that enables DevOps. This includes static code analysis and unit tests, but will also include functional test automation at the UI layer and API layer, as well as service virtualization and performance tests that run with every build and are kicked off via CI tools.
+</span>
+</p>
+<p>
+<span class="annotate" id="a769146542">
+It is important to note that automation isn't just a matter of being able to quickly create a set of automated test scripts; it is about being able to create a set of effective tests that can be maintained with minimal effort and executed without any human intervention, as part of a DevOps toolchain. Maintaining healthy and relevant sets of automated tests over time is one of the biggest challenges in test automation. Often, the time saved executing tests automatically is outweighed by the time spent updating them. Successful test automation must also include the automated design of test cases — for example, based on a model of the application or a set of requirements as well as automatic generation of relevant test data. Ultimately, tests must demonstrate that applications not only work, but satisfy real business requirements.
+</span>
+</p>
+<p>
+<span class="annotate" id="a508584134">
+The theme of this year's Magic Quadrant is continuous testing, and the focus has shifted. We evaluated vendors that offer test automation solutions with strong support for organizations with a high percentage of custom application development, and with a need to support continuous automated testing as part of a DevOps delivery pipeline. Such offerings include the ability to leverage open-source testing frameworks and tools as well as increase tester productivity through added-value features. They provide UI test automation, API test automation capabilities, or both. They can simplify testing across all layers of an application (GUI, API and data).
+</span>
+</p>
+<p>
+<span class="annotate" id="a1901419570">
+As we focused on these custom development scenarios, we did not evaluate vendors that primarily focused on packaged application testing scenarios. These are different to most custom-made software, as organizations have a stronger focus on validation of business process, integration points and performance.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1291207979">
+The state of the test automation market in 2017 again demonstrates the continued volatility of test automation technologies. It also points to the growing maturation of the market, as the bar continues to be raised. Strong go-to-market strategies combined with strong visions for next-generation automation technologies proved to be the winning formula for those in the Leaders and Visionaries quadrants. The Challengers and Niche Players quadrants represent a good mix of vendors that fine-tune their test automation strategies and offerings, often as part of larger product portfolios.
+</span>
+</p>
+<p>
+<span class="annotate" id="a826053912">
+As with any fast-changing market, simply shortlisting vendors from the Leaders quadrant does not guarantee success. IT leaders need to work with their LOB stakeholders to identify the best solution, based on specific use cases, skill sets and resources, as well as the DevOps-readiness of the enterprise business applications, IT architecture and infrastructure.
+</span>
+</p>
+<p>
+<span class="annotate" id="a694746965">
+A few things to consider about vendor positions on the Magic Quadrant:
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-1545682569">
+Be aware that choosing a
+</span>
+<b>
+<span class="annotate" id="a-1075951585">
+Leader
+</span>
+</b>
+<span class="annotate" id="a-1682199649">
+may be too costly or overwhelming in terms of capabilities for some enterprises, depending on your readiness and use cases.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1463404504">
+If you select a
+</span>
+<b>
+<span class="annotate" id="a-431566620">
+Challenger
+</span>
+</b>
+<span class="annotate" id="a304656274">
+based on its ability to deliver immediate value, realize that it may lack a cohesive technical or business vision — or may have lingering product gaps or legacy functionality.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1474720631">
+If you select a
+</span>
+<b>
+<span class="annotate" id="a-990383232">
+Visionary,
+</span>
+</b>
+<span class="annotate" id="a675022524">
+be aware that it will have the necessary market and product understanding to excel, but perhaps not the resources or the corporate ability to realize its vision.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a1327721989">
+For certain scenarios, such as those based on specific internal skill sets or departmental needs, consider choosing a
+</span>
+<b>
+<span class="annotate" id="a-2068786401">
+Niche Player.
+</span>
+</b>
+<span class="annotate" id="a-1529865745">
+It could be the best option to get started or to supplement test automation tools.
+</span>
+</p>
+</li>
+</ul>
+<p>
+<span class="annotate" id="a-1396111371">
+The test automation market landscape is vast and diverse, and includes many vendors with different specialization. Gartner is aware of more than 100 vendors offering test automation solutions globally, but these vendors do not represent the complete marketplace. The nine vendors evaluated in this Magic Quadrant represent only a small number of vendors capable of supporting enterprise customers. Be aware that many smaller vendors not covered in this Magic Quadrant may be appropriate for your particular needs.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1267687387">
+Gartner uses inclusion criteria to identify global vendors that can handle complex, transformational projects in large enterprises, but there are many vendors with focused technologies (e.g., support for COTS) that may be more appropriate. When selecting tools, it is key to understand the specific use cases as well as skill sets, practices and operational models. Because of the diversity of technologies to test, and as organizations become bimodal, teams should also expect to have more than one automation tool in place. Clients are advised to speak to the authors of this Magic Quadrant to narrow down a shortlist of best-fit vendors in this study as well as to discuss providers not covered here.
+</span>
+</p>
+<p>
+<span class="annotate" id="a-2106328888">
+After reviewing this research, IT leaders need to take the following actions:
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<em>
+<span class="annotate" id="a1109057144">
+If you don't already use a solution for automated functional testing:
+</span>
+</em>
+<span class="annotate" id="a1997080037">
+Utilize this Magic Quadrant to understand the market. Evaluate tools that fit your use cases and the technical skills of the individuals who will be contributing to the automation efforts. A test automation tool will support a more repeatable and consistent testing approach across projects, and enable more scalable testing as the number of test targets increases.
+</span>
+</p>
+</li>
+<li>
+<p>
+<em>
+<span class="annotate" id="a1978846322">
+If you already use a test automation solution (either listed in this Magic Quadrant or not) and are thinking of switching vendors:
+</span>
+</em>
+<span class="annotate" id="a1027198541">
+Consider whether it may be better to supplement the missing functionality by adding complementary tools — for example, open-source frameworks or plug-ins that provide the needed functionality and integrate with your existing tools. The cost of switching from one test automation solution to another could be high, depending on the amount of custom integration to your environment and customized script logic.
+</span>
+</p>
+</li>
+<li>
+<p>
+<em>
+<span class="annotate" id="a-1324125466">
+If you use a test automation tool that no longer meets your needs or that you feel may not be viable:
+</span>
+</em>
+<span class="annotate" id="a239274723">
+Start evaluating other platforms based on future as well as current needs, such as support for new technologies (e.g., wearables, conversational interfaces, IoT objects). Consider options that offer similar technologies or require similar skill sets, such as scripting support or visual paradigms, but don't lock yourself into these existing needs if your application testing requirements have outgrown them.
+</span>
+</p>
+</li>
+<li>
+<p>
+<em>
+<span class="annotate" id="a732383052">
+If you use a test automation solution and are happy with it:
+</span>
+</em>
+<span class="annotate" id="a-1845775876">
+Assess its capabilities and roadmap features at least every six to 12 months to make sure that it continues to align with your organization's expectations and plans.
+</span>
+</p>
+</li>
+</ul>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_market_overview"> </a>
+<span class="annotate" id="a-1959307790">
+Market Overview
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<span class="annotate" id="a-1828762917">
+Demand for test automation continues to grow, driven by time-to-market considerations and increasingly complex applications having become the driver of a digital business. Organizations must find ways to achieve a higher rate of automation and support shifts to agile and DevOps practices. Continuous delivery (CD) practices rely on a fully automated delivery pipeline, including automated functional testing as well as code quality, security and performance testing. Together with new opportunities created by a shift to cloud-based solutions, this is creating a vibrant market — many new products entering the space, acquisitions, and innovation from existing vendors.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1637760211">
+During the course of producing this research, the Micro Focus and heritage HPE Software spin-merge finalized on 1 September 2017. The transaction was announced a year earlier on 7 September 2016 and caused speculations about its market impact (see
+</span>
+</doc/code/316519?ref=ddisp>
+<span class="annotate" id="a225624185">
+&quot;HPE's Spinoff/Merge of Its Software Businesses to Micro Focus May Create Significant Challenges for Users&quot;
+</span>
+</a>
+<span class="annotate" id="a-849566137">
+). It also opened a window of opportunity for competitors eager to take market share. While the transaction has now closed, we expect the reverberations to continue disrupting the market. HPE was the dominant force in this market for many years, and has now exited the market; Micro Focus now needs to define and communicate its go-forward strategy.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1129266401">
+We expect that the market will remain very dynamic, creating opportunities for vendors over the next 12 to 18 months as significant investment capital continues to flow and commercial providers expand portfolios to better support agile and DevOps best practices. Vendors will look to position themselves in the digital business marketplace, further consolidate market share or build a solid maintenance revenue pipeline. There will continue to be a steady influx of new, innovative vendors that don't need to deal with legacy heritage and can take advantage of open-source building blocks, quickly building a modern and user-friendly portfolio of products that appeal to agile developers. The majority of these vendors are still in the startup phase, with little revenue and limited customer bases. However, we expect that many of them will be useful additions to the portfolios of some of the larger vendors that have gaps in their offerings. We also continue to see increased efforts from testing service firms to produce tools, and we expect testing service providers to have a higher impact on the overall market due to the level of use and growth of test outsourcing.
+</span>
+</p>
+<p>
+<span class="annotate" id="a979459299">
+Open source continues to have a galvanizing effect on the market. In many cases, it has provided a level of &quot;standardization&quot; that has been well-adopted by organizations practicing agile development and making use of CI/CD practices. Open-source offerings are increasingly replacing the more traditional ALM-driven execution of tests with the automated execution of tests, as part of a CI/CD process. Testing is evolving to a mentality of using the tools that work best for the team; and rather than use a monolithic tool, developers are using a combination of open-source and commercial tools to perform the various testing activities — for example:
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<span class="annotate" id="a-959810366">
+Selenium has emerged as the de facto standard for web testing, and a large ecosystem has developed around it.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-2031950628">
+Appium is also gaining a lot of momentum as one of the most popular open-source, cross-platform mobile automation frameworks for executing tests on iOS and Android, as well as Windows desktop.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-1844017771">
+BDD frameworks such as SpecFlow, Cucumber and JBehave, along with the Gherkin language, are getting adopted by many agile development organizations. Test automation vendors are including support for such frameworks.
+</span>
+</p>
+</li>
+<li>
+<p>
+<span class="annotate" id="a-2007907470">
+Other open-source tools and frameworks have also gained momentum, including Geb, SoapUI, Sahi, Watir, Protractor, Bugzilla and Apache JMeter — and the number is growing.
+</span>
+</p>
+</li>
+</ul>
+<p>
+<span class="annotate" id="a1659227517">
+Open source is also one of the key factors that is increasingly dividing the market. Many tools are targeting the developer and technical tester. They integrate well with the overall development tool stack and offer a code-based approach to developing test scripts. However, these tools are less-suited for nondevelopers. Subject matter experts and business analysts who are contributing to test automation efforts are looking for options that either hide or remove coding completely. We expect that the majority of organizations will find themselves using a number of tools from different providers (or open source) rather than having a single vendor to solve all problems. As an integral part of a DevOps toolchain, test automation solutions are continuing to evolve rapidly beyond being just silos for the development of automated tests by dedicated testers. Leading solutions enable multiple user types to contribute to building automated tests for multiple test targets and foster collaboration in the greater team in the same tool.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1284129366">
+To achieve this metamorphosis, you must address three important principles with your test automation tools:
+</span>
+</p>
+<ol>
+<li>
+<p>
+<b>
+<span class="annotate" id="a217914069">
+Decouple test development methodology and technology.
+</span>
+</b>
+<span class="annotate" id="a-1957320374">
+Use cases across an enterprise are very diverse. Test automation functionality must be exposed in different front ends, frameworks and IDEs that are tailored to specific app use cases and user roles.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-2120693609">
+Embrace open source and standards.
+</span>
+</b>
+<span class="annotate" id="a1474780570">
+The adoption of open-source solutions for testing is accelerating and organizations are aiming to lower the risk of vendor lock-in. Test automation tools must therefore integrate with open-source tools and support testing frameworks, such as Selenium, Appium or SoapUI.
+</span>
+</p>
+</li>
+<li>
+<p>
+<b>
+<span class="annotate" id="a-437991917">
+Enable self-service development.
+</span>
+</b>
+<span class="annotate" id="a784263422">
+Test automation development is increasingly initiated and supported by constituents outside IT. Test automation solutions must enable a self-service mode of development and provide visual or model-driven paradigms for citizen testers, such as business analysts, LOB professionals and marketing professionals.
+</span>
+</p>
+</li>
+</ol>
+<p>
+<span class="annotate" id="a109904347">
+Over the next five years, we expect that machine learning and predictive analytics will play an increasing role in software testing and automation. We are beginning to see early signs of this primarily in research or in focused domains. It is likely that packaged applications as well as test planning and management will be the first areas that have success here. There will be an outgrowth of tools designed around robotic process automation (RPA) and business process extraction to automatically derive test automation, as well as around using predictive analytics to focus testing efforts.
+</span>
+</p>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_acronym_key_and"> </a>
+<span class="annotate" id="a1563410521">
+Acronym Key and Glossary Terms
+</span>
+</h2>
+<div class="clearme"></div>
+<div class="overflow-item">
+<table class="table table-bordered">
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a-708141857">
+ALM
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a1514155183">
+application life cycle management
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a1548769270">
+API
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a224541633">
+application programming interface
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a-489286435">
+BDD
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a1245822778">
+behavior-driven development
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a-1328453145">
+CD
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a969486057">
+continuous development
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a-1117102227">
+CI
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a-974739103">
+continuous integration
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a1986486018">
+IDE
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a1878291550">
+integrated development environment
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a-51567050">
+LOB
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a-1997230695">
+line of business
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a-483049062">
+QA
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a627998641">
+quality assurance
+</span>
+</td>
+</tr>
+<tr>
+<td class="glossary-term">
+<span class="annotate" id="a-271697982">
+VM
+</span>
+</td>
+<td class="glossary-def">
+<span class="annotate" id="a175948504">
+virtual machine
+</span>
+</td>
+</tr>
+</table>
+</div>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<span class="annotate" id="a-1292873004">
+Evidence
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<a id="dv_the_magic_quadrant" ></a>
+<span class="annotate" id="a489399702">
+The Magic Quadrant is a reflection of a broad-based research effort involving:
+</span>
+</p>
+<ul class="bullets-yes">
+<li>
+<p>
+<a id="dv_over_700_inquiries" ></a>
+<span class="annotate" id="a156625577">
+Over 700 inquiries with Gartner clients inquiring about test automation tools during the past 12 months.
+</span>
+</p>
+</li>
+<li>
+<p>
+<a id="dv_many_inperson_discussions" ></a>
+<span class="annotate" id="a-1695291897">
+Many in-person discussions and other interactions with the vendors within this Magic Quadrant.
+</span>
+</p>
+</li>
+<li>
+<p>
+<a id="dv_a_detailed_vendor" ></a>
+<span class="annotate" id="a1254052098">
+A detailed vendor survey requiring responses to more than 200 questions.
+</span>
+</p>
+</li>
+<li>
+<p>
+<a id="dv_a_gartnerconducted_survey" ></a>
+<span class="annotate" id="a-672755123">
+A Gartner-conducted survey of organizations using online tools from June to July 2017. The survey participants were customer references nominated by each of the vendors in this Magic Quadrant. These surveyed customers were asked 50 questions about their experiences with their vendors and solutions. The results were used in support of the assessment of the software test automation market. We obtained 76 full responses representing companies headquartered across several different geographic regions.
+</span>
+</p>
+</li>
+<li>
+<p>
+<a id="dv_a_live_product" ></a>
+<span class="annotate" id="a1979626116">
+A live product demonstration from each of the nine participating Magic Quadrant vendors, where each was requested to provide insight into their ability to support specific functions.
+</span>
+</p>
+</li>
+</ul>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_note_1_mobile"> </a>
+<span class="annotate" id="a912925889">
+Note 1
+</span>
+<br/>
+<span class="annotate" id="a982332608">
+Mobile Application Testing
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<span class="annotate" id="a-83308929">
+The mobile testing market is very dynamic, evolving as core capabilities grow (automation, device clouds, etc.). We expect continued market consolidation, driven by acquisitions, pressure from open-source and mobile-platform-provided tools, as well as rapidly changing market needs. The majority of the vendors covered in this Magic Quadrant support mobile application testing, as this capability becomes more mainstream. This is via licensed technology or is vendor-native.
+</span>
+</p>
+<p>
+<span class="annotate" id="a2143680749">
+Many of the vendors covered in the
+</span>
+</doc/code/311515?ref=ddisp>
+<span class="annotate" id="a-241065944">
+&quot;Magic Quadrant for Mobile App Development Platforms&quot;
+</span>
+</a>
+<span class="annotate" id="a1271819108">
+also provide some level of mobile testing capability. However, we note that the mobile-focused vendors offer significant advantages in many cases, including breadth of device support, speed of support of OS upgrades (new gestures, for example), and support for provisioning and management of device clouds.
+</span>
+</p>
+<p>
+<span class="annotate" id="a1939199843">
+We have not included tools that are mobile-only in their focus; we currently cover this area in our
+</span>
+</doc/code/276062?ref=ddisp>
+<span class="annotate" id="a1693162699">
+&quot;Market Guide for Mobile App Test Automation Tools.&quot;
+</span>
+</a>
+<span class="annotate" id="a-2146275808">
+There is also a large variety of options from the open-source community — specifically, Appium is gaining a lot of momentum.
+</span>
+</p>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_note_2_commercial"> </a>
+<span class="annotate" id="a1124276803">
+Note 2
+</span>
+<br/>
+<span class="annotate" id="a-2025335255">
+Commercial Off-the-Shelf Testing
+</span>
+</h2>
+<div class="clearme"></div>
+<p>
+<span class="annotate" id="a-108155743">
+Most vendors &quot;support&quot; testing of packaged application software to the extent that they can drive the UI of the front end — that is, if the client front end is a native Windows or web application, it is &quot;just another application&quot; that can be automated in the same way as others built on that technology. However, this ignores that packaged application testing scenarios are different to most custom-made software. Organizations are more focused on validation of business process, integration points and performance. We have not included tools that primarily focus on support for COTS applications in this research.
+</span>
+</p>
+<p>
+<span class="annotate" id="a46563506">
+Support for packaged applications from commercial vendors is also limited. The majority of solutions focus on the ERP and/or CRM applications of SAP and/or Oracle. There is now a growing set of solutions for SaaS offerings such as Salesforce, but coverage is still uneven. Many testing service providers also have packaged application-specific offerings, and some of these include vertical-market-specific packaged applications (such as Infosys Finacle).
+</span>
+</p>
+<p>
+<span class="annotate" id="a-1377753418">
+The best-focused solutions provide additional acceleration, including management of test data, connection to change management (to automate selection of tests that need to be run) and change impact analysis.
+</span>
+</p>
+<!-- recurese sec 2 end -->
+<!-- recurese sec 2 start -->
+<h2 class="condensed medium">
+<a id="dv_evaluation_criteria_definitions"> </a>
+<span class="annotate" id="a-938818461">
+Evaluation Criteria Definitions
+</span>
+</h2>
+<div class="clearme"></div>
+<h3 class="condensed">
+<span class="annotate" id="a914900961">
+Ability to Execute
+</span>
+</h3>
+<p>
+<b>
+<span class="annotate" id="a636930196">
+Product/Service:
+</span>
+</b>
+<span class="annotate" id="a-1274990118">
+Core goods and services offered by the vendor for the defined market. This includes current product/service capabilities, quality, feature sets, skills and so on, whether offered natively or through OEM agreements/partnerships as defined in the market definition and detailed in the subcriteria.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a-1198853244">
+Overall Viability:
+</span>
+</b>
+<span class="annotate" id="a-526663472">
+Viability includes an assessment of the overall organization's financial health, the financial and practical success of the business unit, and the likelihood that the individual business unit will continue investing in the product, will continue offering the product and will advance the state of the art within the organization's portfolio of products.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a-1875086436">
+Sales Execution/Pricing:
+</span>
+</b>
+<span class="annotate" id="a1015552686">
+The vendor's capabilities in all presales activities and the structure that supports them. This includes deal management, pricing and negotiation, presales support, and the overall effectiveness of the sales channel.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a1121045467">
+Market Responsiveness/Record:
+</span>
+</b>
+<span class="annotate" id="a-1904095554">
+Ability to respond, change direction, be flexible and achieve competitive success as opportunities develop, competitors act, customer needs evolve and market dynamics change. This criterion also considers the vendor's history of responsiveness.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a73767649">
+Marketing Execution:
+</span>
+</b>
+<span class="annotate" id="a-1292894209">
+The clarity, quality, creativity and efficacy of programs designed to deliver the organization's message to influence the market, promote the brand and business, increase awareness of the products, and establish a positive identification with the product/brand and organization in the minds of buyers. This &quot;mind share&quot; can be driven by a combination of publicity, promotional initiatives, thought leadership, word of mouth and sales activities.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a-1170908112">
+Customer Experience:
+</span>
+</b>
+<span class="annotate" id="a-1938647213">
+Relationships, products and services/programs that enable clients to be successful with the products evaluated. Specifically, this includes the ways customers receive technical support or account support. This can also include ancillary tools, customer support programs (and the quality thereof), availability of user groups, service-level agreements and so on.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a1239660787">
+Operations:
+</span>
+</b>
+<span class="annotate" id="a-1110096569">
+The ability of the organization to meet its goals and commitments. Factors include the quality of the organizational structure, including skills, experiences, programs, systems and other vehicles that enable the organization to operate effectively and efficiently on an ongoing basis.
+</span>
+</p>
+<h3 class="condensed">
+<span class="annotate" id="a-1906316323">
+Completeness of Vision
+</span>
+</h3>
+<p>
+<b>
+<span class="annotate" id="a503857548">
+Market Understanding:
+</span>
+</b>
+<span class="annotate" id="a1703481673">
+Ability of the vendor to understand buyers' wants and needs and to translate those into products and services. Vendors that show the highest degree of vision listen to and understand buyers' wants and needs, and can shape or enhance those with their added vision.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a395805336">
+Marketing Strategy:
+</span>
+</b>
+<span class="annotate" id="a1012680895">
+A clear, differentiated set of messages consistently communicated throughout the organization and externalized through the website, advertising, customer programs and positioning statements.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a422024849">
+Sales Strategy:
+</span>
+</b>
+<span class="annotate" id="a-1727264539">
+The strategy for selling products that uses the appropriate network of direct and indirect sales, marketing, service, and communication affiliates that extend the scope and depth of market reach, skills, expertise, technologies, services and the customer base.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a1441164046">
+Offering (Product) Strategy:
+</span>
+</b>
+<span class="annotate" id="a258475055">
+The vendor's approach to product development and delivery that emphasizes differentiation, functionality, methodology and feature sets as they map to current and future requirements.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a72976593">
+Business Model:
+</span>
+</b>
+<span class="annotate" id="a1945444163">
+The soundness and logic of the vendor's underlying business proposition.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a1633926435">
+Vertical/Industry Strategy:
+</span>
+</b>
+<span class="annotate" id="a947562354">
+The vendor's strategy to direct resources, skills and offerings to meet the specific needs of individual market segments, including vertical markets.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a-673306421">
+Innovation:
+</span>
+</b>
+<span class="annotate" id="a1648520993">
+Direct, related, complementary and synergistic layouts of resources, expertise or capital for investment, consolidation, defensive or pre-emptive purposes.
+</span>
+</p>
+<p>
+<b>
+<span class="annotate" id="a-503554813">
+Geographic Strategy:
+</span>
+</b>
+<span class="annotate" id="a-648903014">
+The vendor's strategy to direct resources, skills and offerings to meet the specific needs of geographies outside the &quot;home&quot; or native geography, either directly or through partners, channels and subsidiaries as appropriate for that geography and market.
+</span>
+</p>
+<!-- recurese sec 2 end -->				</div>
+				<div class="col-lg-3 right-rail">
+					<div class="prms">
+						<a href="https://www.gartner.com/technology/contact/become-a-client.jsp?cm_sp=bac-_-reprint-_-banner" data-ga-promo="Become a Client" target="_blank"><img src="https://www.gartner.com/imagesrv/reprints/images/become-client.png;wae47e6c7fe0dfed52"></a> 
+					</div>
+				</div>
+				<div class="col-lg-1"></div>	
+			</div>
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+			    <footer>
+				    <div id="copyright"> 
+				    	<p class="copyright">
+				    		&copy; 2017 Gartner, Inc. and/or its affiliates. All rights reserved. Gartner is a registered trademark of Gartner, Inc. or its affiliates. This publication may not be reproduced or distributed in any form without Gartner's prior written permission. If you are authorized to access this publication, your use of it is subject to the <a href="/technology/about/policies/usage_guidelines.jsp" target="_0">Usage Guidelines for Gartner Services</a> posted on gartner.com. The information contained in this publication has been obtained from sources believed to be reliable. Gartner disclaims all warranties as to the accuracy, completeness or adequacy of such information and shall have no liability for errors, omissions or inadequacies in such information. This publication consists of the opinions of Gartner's research organization and should not be construed as statements of fact. The opinions expressed herein are subject to change without notice. Gartner provides information technology research and advisory services to a wide range of technology consumers, manufacturers and sellers, and may have client relationships with, and derive revenues from, companies discussed herein. Although Gartner research may include a discussion of related legal issues, Gartner does not provide legal advice or services and its research should not be construed or used as such. Gartner is a public company, and its shareholders may include firms and funds that have financial interests in entities covered in Gartner research. Gartner's Board of Directors may include senior managers of these firms or funds. Gartner research is produced independently by its research organization without input or influence from these firms, funds or their managers. For further information on the independence and integrity of Gartner research, see "<a href="/technology/about/ombudsman/omb_guide2.jsp" target="_0">Guiding Principles on Independence and Objectivity.</a>"
+				    	</p>
+				    </div>
+				    <hr>
+			      <ul id="footer-links" class="footer-links">
+			        <li><a href="http://www.gartner.com/technology/about.jsp" target="_top">About</a></li>
+			        <span class="visible-sm-block hidden-xs"> | </span>
+			        <li><a href="http://www.gartner.com/technology/careers/" target="_top">Careers</a></li>
+			        <span class="visible-sm-block hidden-xs"> | </span>
+			        <li><a href="http://www.gartner.com/newsroom/" target="_top">Newsroom</a> </li>
+			        <span class="visible-sm-block hidden-xs"> | </span>
+			        <li><a href="http://www.gartner.com/technology/about/policies/guidelines_ov.jsp" target="_top">Policies</a></li>
+			        <span class="visible-sm-block hidden-xs"> | </span>
+			        <li><a href="https://www.gartner.com/privacy" target="_top">Privacy</a></li>
+			        <span class="visible-sm-block hidden-xs"> | </span>
+			        <li><a href="http://www.gartner.com/technology/site-index.jsp" target="_top">Site Index</a></li>
+			        <span class="visible-sm-block hidden-xs"> | </span>
+			        <li><a href="http://www.gartner.com/it-glossary/" target="_top">IT Glossary</a></li>
+			        <span class="visible-sm-block hidden-xs"> | </span>
+			        <li><a href="http://www.gartner.com/technology/contact/contact_gartner.jsp" target="_top">Contact Gartner</a></li>
+			      </ul>
+			    </footer>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>			 
+		</div>
+		<script src="https://www.gartner.com/imagesrv/apps/gproduct/js/reader/reprint.js;wa5efd6e2bfa9fc4ef"></script> 
+		<script src="https://www.gartner.com/imagesrv/apps/common/js/stackable.js;wa91375e61e4a423da"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('table').stacktable();
+			});
+		</script>
+	</body>
+</html>

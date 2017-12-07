@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Archived conversations</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                function selectConversation(element) {
+                    if (selectedConvLi) {
+                        selectedConvLi.className = "conversations";
+                    }
+                    var href = element.getAttribute('href');
+                    selectedConversationHeader.innerHTML = element.innerHTML;
+                    selectedConversationDiv.innerHTML='<object class="object" type="text/html" data="' + href + '" ></object>';
+                    selectedConvLi = element.parentNode;
+                    selectedConvLi.className = "conversations-sel"
+                }
+                function convCallback(event) {
+                    if (event.target.tagName !== 'A') {
+                        return;
+                    }
+                    selectConversation(event.target);
+                    event.preventDefault();
+                }
+
+                var selectedConvLi = null;
+                var selectedConversationDiv = document.getElementById("selected-conversation-placeholder");
+                var selectedConversationHeader = document.getElementById("selected-conversation-header");
+                var conversations = document.getElementById('conversations');
+                conversations.addEventListener('click', convCallback, false);
+                selectConversation(conversations.firstElementChild.firstElementChild);
+            });
+        </script>
+        <div class="left">
+            <div class="header">
+                <h1 class="conversations">Archived conversations</h1>
+
+<table>
+                <tbody>
+                    <tr><th>User</th><td id="hdr-user">Zoso Abi <small>(zosoabi)</small></td></tr>
+                    <tr><th>Exported</th><td id="hdr-exported">12/7/2017 1:37:40 PM</td></tr>
+                    <tr><th>Total</th><td id="hdr-stats">35 conversations</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <ul class="conversations" id="conversations">
+        
+        <li class="conversations">
+            <a href="Kamran-RCOM-2492.html#end" target="selected-chat">Kamran RCOM</a>
+            <div>
+                <span class ="messageCount">52 messages</span>
+                <span class ="timestamp-conv">Last from: 12/1/2017 2:57:23 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Farug-Muganlinsky-671.html#end" target="selected-chat">Farug Muganlinsky</a>
+            <div>
+                <span class ="messageCount">1410 messages</span>
+                <span class ="timestamp-conv">Last from: 12/1/2017 1:14:19 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Nizami-Khalilbayli--Amal-Mammadov--Mehman-Simbrella------1704.html#end" target="selected-chat">Nizami Khalilbayli, Amal Mammadov, Mehman Simbrella, ...</a>
+            <div>
+                <span class ="messageCount">79 messages</span>
+                <span class ="timestamp-conv">Last from: 12/1/2017 12:47:58 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Mehman-Simbrella-1449.html#end" target="selected-chat">Mehman Simbrella</a>
+            <div>
+                <span class ="messageCount">24 messages</span>
+                <span class ="timestamp-conv">Last from: 12/1/2017 12:42:43 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="DOk-15335.html#end" target="selected-chat">DOk</a>
+            <div>
+                <span class ="messageCount">42 messages</span>
+                <span class ="timestamp-conv">Last from: 11/30/2017 7:59:53 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Anar-Gadirov-1092.html#end" target="selected-chat">Anar Gadirov</a>
+            <div>
+                <span class ="messageCount">25 messages</span>
+                <span class ="timestamp-conv">Last from: 11/30/2017 5:19:43 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Aleksey-K--1184.html#end" target="selected-chat">Aleksey K.</a>
+            <div>
+                <span class ="messageCount">33 messages</span>
+                <span class ="timestamp-conv">Last from: 11/30/2017 5:19:35 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="------------1203.html#end" target="selected-chat">Руслан.РКом</a>
+            <div>
+                <span class ="messageCount">107 messages</span>
+                <span class ="timestamp-conv">Last from: 11/30/2017 12:28:18 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="-------------10078.html#end" target="selected-chat">Орлов Андрей</a>
+            <div>
+                <span class ="messageCount">47 messages</span>
+                <span class ="timestamp-conv">Last from: 11/29/2017 5:02:20 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Shamsiyya-Ismayilova-1269.html#end" target="selected-chat">Shamsiyya Ismayilova</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 11/29/2017 5:00:21 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Ali-Akbar-Mammadov-2731.html#end" target="selected-chat">Ali Akbar Mammadov</a>
+            <div>
+                <span class ="messageCount">42 messages</span>
+                <span class ="timestamp-conv">Last from: 11/29/2017 12:55:31 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Rauf-Ismayilov-1637.html#end" target="selected-chat">Rauf Ismayilov</a>
+            <div>
+                <span class ="messageCount">59 messages</span>
+                <span class ="timestamp-conv">Last from: 11/29/2017 10:39:41 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Sanan-Yuzbashiyev-1096.html#end" target="selected-chat">Sanan Yuzbashiyev</a>
+            <div>
+                <span class ="messageCount">5 messages</span>
+                <span class ="timestamp-conv">Last from: 11/28/2017 11:59:29 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Amal-Mammadov-2308.html#end" target="selected-chat">Amal Mammadov</a>
+            <div>
+                <span class ="messageCount">4 messages</span>
+                <span class ="timestamp-conv">Last from: 11/28/2017 9:40:55 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Nurida-1207.html#end" target="selected-chat">Nurida</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 11/27/2017 7:30:55 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Leman-Iskender-10427.html#end" target="selected-chat">Leman Iskender</a>
+            <div>
+                <span class ="messageCount">24 messages</span>
+                <span class ="timestamp-conv">Last from: 11/26/2017 11:04:59 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Imran-Aliyev-2931.html#end" target="selected-chat">Imran Aliyev</a>
+            <div>
+                <span class ="messageCount">11 messages</span>
+                <span class ="timestamp-conv">Last from: 11/26/2017 11:43:29 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Dilber-Babayeva-921.html#end" target="selected-chat">Dilber Babayeva</a>
+            <div>
+                <span class ="messageCount">2 messages</span>
+                <span class ="timestamp-conv">Last from: 11/24/2017 10:38:00 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Shamil-Aliyev-797.html#end" target="selected-chat">Shamil Aliyev</a>
+            <div>
+                <span class ="messageCount">7 messages</span>
+                <span class ="timestamp-conv">Last from: 11/23/2017 11:13:52 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Natik-Aleskerzade-1172.html#end" target="selected-chat">Natik Aleskerzade</a>
+            <div>
+                <span class ="messageCount">8 messages</span>
+                <span class ="timestamp-conv">Last from: 11/22/2017 10:14:12 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Kanan-Mammadli-1215.html#end" target="selected-chat">Kanan Mammadli</a>
+            <div>
+                <span class ="messageCount">34 messages</span>
+                <span class ="timestamp-conv">Last from: 11/7/2017 5:57:30 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="botmenu-15455.html#end" target="selected-chat">botmenu</a>
+            <div>
+                <span class ="messageCount">3 messages</span>
+                <span class ="timestamp-conv">Last from: 10/26/2017 11:24:10 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Solitaire-15460.html#end" target="selected-chat">Solitaire</a>
+            <div>
+                <span class ="messageCount">9 messages</span>
+                <span class ="timestamp-conv">Last from: 10/24/2017 2:19:39 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Magsud-Mammadzada-15360.html#end" target="selected-chat">Magsud Mammadzada</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 10/23/2017 11:21:54 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Simbrella-support-1469.html#end" target="selected-chat">Simbrella support</a>
+            <div>
+                <span class ="messageCount">2 messages</span>
+                <span class ="timestamp-conv">Last from: 10/19/2017 9:54:27 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Ali-Quliyev-1389.html#end" target="selected-chat">Ali Quliyev</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 10/18/2017 11:05:02 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="---------------1188.html#end" target="selected-chat">Муравьёв Тимур</a>
+            <div>
+                <span class ="messageCount">177 messages</span>
+                <span class ="timestamp-conv">Last from: 10/17/2017 4:40:36 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Elnur-Rzazade-681.html#end" target="selected-chat">Elnur Rzazade</a>
+            <div>
+                <span class ="messageCount">24 messages</span>
+                <span class ="timestamp-conv">Last from: 10/17/2017 11:17:07 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Aygun-1774.html#end" target="selected-chat">Aygun</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 9/29/2017 10:44:13 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Vladimirsky-1308.html#end" target="selected-chat">Vladimirsky</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 9/26/2017 3:56:47 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Skype-1196.html#end" target="selected-chat">Skype</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 9/2/2017 10:54:04 AM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Vadim-Ismayilov-1199.html#end" target="selected-chat">Vadim Ismayilov</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 8/31/2017 4:35:08 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Elbay-Bayramli-1429.html#end" target="selected-chat">Elbay Bayramli</a>
+            <div>
+                <span class ="messageCount">17 messages</span>
+                <span class ="timestamp-conv">Last from: 8/25/2017 4:57:38 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Rena-Fika-1700.html#end" target="selected-chat">Rena Fika</a>
+            <div>
+                <span class ="messageCount">36 messages</span>
+                <span class ="timestamp-conv">Last from: 8/24/2017 12:00:25 PM</span>
+            </div>
+        </li>
+
+        <li class="conversations">
+            <a href="Adil-666.html#end" target="selected-chat">Adil</a>
+            <div>
+                <span class ="messageCount">1 message</span>
+                <span class ="timestamp-conv">Last from: 7/19/2017 12:25:46 PM</span>
+            </div>
+        </li>
+
+        </ul>
+        </div>
+        <div id= "selected-conversation" class="right" >
+            <h1 class="conversation" id="selected-conversation-header"></h1>
+            <div id= "selected-conversation-placeholder">
+            </div>
+        </div>
+    </body>
+</html>
